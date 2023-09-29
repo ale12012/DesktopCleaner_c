@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
                 }
 
                 if (strcmp(&desktopPath[0], ".") == 0 || strcmp(&desktopPath[0], "~") == 0 || strcmp(&desktopPath[0], "$") == 0 
-                || strstr(desktopPath, ".lnk") != NULL || strstr(desktopPath, ".ini") != NULL)
+                || strstr(desktopPath, ".ini") != NULL)
                 {
                     continue;
                 }
