@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cleanerfuncs.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
