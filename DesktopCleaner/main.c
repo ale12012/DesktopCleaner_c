@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[])
 {
-
+    logFiles();
     char** files = getFiles();
     char* s = malloc(10 * sizeof(char));
     strcpy(s, getStatus());
@@ -14,7 +14,6 @@ int main(int argc, char* argv[])
     if (strcmp(s, "0") == 0)
     {
         printf("Setting hidden attribute\n");
-        logFiles();
         for (int i = 0; i < 100; i++)
         {
             if (files[i] == NULL)
@@ -41,7 +40,6 @@ int main(int argc, char* argv[])
     else
     {
         printf("Removing hidden attribute\n");
-        logFiles();
         for (int i = 0; i < 100; i++)
         {
             if (files[i] == NULL)
